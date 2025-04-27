@@ -8,4 +8,10 @@ object OutputView {
             println("[${index + 1}] ${item.title} (${item.publishedAt}) - ${item.link}  ")
         }
     }
+
+    fun printNewFeeds(list: List<RssItem>) {
+        for ((index, item) in list.withIndex()) {
+            println("[new] ${item.title} (${item.publishedAt}) - ${item.link}  ")
+        }
+    }
 }
